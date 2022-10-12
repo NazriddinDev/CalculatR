@@ -1,0 +1,2 @@
+# CalculatR
+Performs mathematical operations
