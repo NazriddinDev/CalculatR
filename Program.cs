@@ -5,18 +5,24 @@ int birinchiRaqam= Convert.ToInt32(Console.ReadLine());
 Console.Write("Ikkinchi raqamni kiriting => ");
 int ikkinchiRaqam= Convert.ToInt32(Console.ReadLine());
 
-if(birinchiRaqam>ikkinchiRaqam)
-{
-    Console.WriteLine("Birinchi son ikkinchisidan katta...");
-}
-else if(birinchiRaqam==ikkinchiRaqam)
-{
-    Console.WriteLine("Ikkala son o'zaro teng...");
-}
-else
-{
-    Console.WriteLine("Birinchi son ikkinchisidan kichik...");
-}
+//ternary operator
+string result =
+    birinchiRaqam >= ikkinchiRaqam
+        ? "Birinchi son ikkinchisidan katta..."
+        : "Birinchi son ikkinchisidan kichik...";
+
+// if(birinchiRaqam>ikkinchiRaqam)
+// {
+//     Console.WriteLine("Birinchi son ikkinchisidan katta...");
+// }
+// else if(birinchiRaqam==ikkinchiRaqam)
+// {
+//     Console.WriteLine("Ikkala son o'zaro teng...");
+// }
+// else
+// {
+//     Console.WriteLine("Birinchi son ikkinchisidan kichik...");
+// }
 
 Console.WriteLine($"Ikki sonning yig'indisi {birinchiRaqam+ikkinchiRaqam}");
 Console.WriteLine($"Ikki sonning ayirmasi {birinchiRaqam-ikkinchiRaqam}");
