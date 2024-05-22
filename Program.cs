@@ -11,6 +11,7 @@ string result =
     birinchiRaqam >= ikkinchiRaqam
         ? "Birinchi son ikkinchisidan katta..."
         : "Birinchi son ikkinchisidan kichik...";
+
 //switch care operation
 switch(operatsiya)
 {
