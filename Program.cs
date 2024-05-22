@@ -11,29 +11,41 @@ string result =
     birinchiRaqam >= ikkinchiRaqam
         ? "Birinchi son ikkinchisidan katta..."
         : "Birinchi son ikkinchisidan kichik...";
-
-//switch care operation
-switch(operatsiya)
+//switch expressions
+string natija = operatsiya switch
 {
-    case "+":
-        Console.WriteLine($"Ikki sonning yig'indisi {birinchiRaqam+ikkinchiRaqam}");
-        break;
-    case "-":
-        Console.WriteLine($"Ikki sonning ayirmasi {birinchiRaqam-ikkinchiRaqam}");
-        break;
-    case "*":
-        Console.WriteLine($"Ikki sonning ko'paytmasi {birinchiRaqam*ikkinchiRaqam}");
-        break;
-    case "/":
-        Console.WriteLine($"Ikki sonning qoldiqsiz bo'linmasi {birinchiRaqam/ikkinchiRaqam}");
-        break;
-    case "%":
-        Console.WriteLine($"Ikki sonning qoldiqli bo'linmasi {birinchiRaqam%ikkinchiRaqam}");
-        break;
-        default:
-            Console.WriteLine("Operatsiya turi topilmadi...");
-            break;
-}
+    "+" => $"Ikki sonning yig'indisi {birinchiRaqam+ikkinchiRaqam}",
+    "-" => $"Ikki sonning ayirmasi {birinchiRaqam-ikkinchiRaqam}",
+    "*" => $"Ikki sonning ko'paytmasi {birinchiRaqam*ikkinchiRaqam}",
+    "/" => $"Ikki sonning qoldiqsiz bo'linmasi {birinchiRaqam/ikkinchiRaqam}",
+    "%" => $"Ikki sonning qoldiqli bo'linmasi {birinchiRaqam%ikkinchiRaqam}",
+    _ => "Operatsiya turi topilmadi...",
+};
+
+Console.WriteLine(natija);
+
+// //switch care operation
+// switch(operatsiya)
+// {
+//     case "+":
+//         Console.WriteLine($"Ikki sonning yig'indisi {birinchiRaqam+ikkinchiRaqam}");
+//         break;
+//     case "-":
+//         Console.WriteLine($"Ikki sonning ayirmasi {birinchiRaqam-ikkinchiRaqam}");
+//         break;
+//     case "*":
+//         Console.WriteLine($"Ikki sonning ko'paytmasi {birinchiRaqam*ikkinchiRaqam}");
+//         break;
+//     case "/":
+//         Console.WriteLine($"Ikki sonning qoldiqsiz bo'linmasi {birinchiRaqam/ikkinchiRaqam}");
+//         break;
+//     case "%":
+//         Console.WriteLine($"Ikki sonning qoldiqli bo'linmasi {birinchiRaqam%ikkinchiRaqam}");
+//         break;
+//         default:
+//             Console.WriteLine("Operatsiya turi topilmadi...");
+//             break;
+// }
 
 // if(birinchiRaqam>ikkinchiRaqam)
 // {
