@@ -123,68 +123,77 @@
 // }
 
 //Ko'paytirish jadvali
-for(int iteration = 2; iteration <= 10; iteration++)
+begin:
+Console.WriteLine("Ko'partirish jadvallarini ko'rishni istaysizmi, unda quyidagi so'zni kiriting => ha");
+string a=Console.ReadLine();
+if(a=="ha")
 {
-    Console.WriteLine("Ko'paytirish jadvallaridan birini tanlang => 2,3,...,8,9");
-    iteration = int.Parse(Console.ReadLine());
-    switch(iteration)
+
+    for(int iteration = 2; iteration <= 10; iteration++)
     {
-        case 2:
-            for(int innerIteration = 1; innerIteration <= 10; innerIteration++)
-            {
-                Console.WriteLine($"{iteration} x {innerIteration} = {iteration * innerIteration}");
-            }
-        break;
-        case 3:
-            for(int innerIteration = 1; innerIteration <= 10; innerIteration++)
-            {
-                Console.WriteLine($"{iteration} x {innerIteration} = {iteration * innerIteration}");
-            }
-        break;
-        case 4:
-            for(int innerIteration = 1; innerIteration <= 10; innerIteration++)
-            {
-                Console.WriteLine($"{iteration} x {innerIteration} = {iteration * innerIteration}");
-            }
-        break;
-        case 5:
-            for(int innerIteration = 1; innerIteration <= 10; innerIteration++)
-            {
-                Console.WriteLine($"{iteration} x {innerIteration} = {iteration * innerIteration}");
-            }
-        break;
-        case 6:
-            for(int innerIteration = 1; innerIteration <= 10; innerIteration++)
-            {
-                Console.WriteLine($"{iteration} x {innerIteration} = {iteration * innerIteration}");
-            }
-        break;
-        case 7:
-            for(int innerIteration = 1; innerIteration <= 10; innerIteration++)
-            {
-                Console.WriteLine($"{iteration} x {innerIteration} = {iteration * innerIteration}");
-            }
-        break;
-        case 8:
-            for(int innerIteration = 1; innerIteration <= 10; innerIteration++)
-            {
-                Console.WriteLine($"{iteration} x {innerIteration} = {iteration * innerIteration}");
-            }
-        break;
-        case 9:
-            for(int innerIteration = 1; innerIteration <= 10; innerIteration++)
-            {
-                Console.WriteLine($"{iteration} x {innerIteration} = {iteration * innerIteration}");
-            }
-        break;
-        case 10:
-            for(int innerIteration = 1; innerIteration <= 10; innerIteration++)
-            {
-                Console.WriteLine($"{iteration} x {innerIteration} = {iteration * innerIteration}");
-            }
-        break;
-        default:
-            System.Console.WriteLine("Kechirasiz, ushbu ko'paytirish jadvali topilmadi...");
-        break;
+        Console.WriteLine("Ko'paytirish jadvallaridan birini tanlang => 2,3,...,8,9");
+        iteration = int.Parse(Console.ReadLine());
+        switch(iteration)
+        {
+            case 2:
+                for(int innerIteration = 1; innerIteration <= 10; innerIteration++)
+                {
+                    Console.WriteLine($"{iteration} x {innerIteration} = {iteration * innerIteration}");
+                }
+                goto begin;
+            case 3:
+                for(int innerIteration = 1; innerIteration <= 10; innerIteration++)
+                {
+                    Console.WriteLine($"{iteration} x {innerIteration} = {iteration * innerIteration}");
+                }
+                goto begin;
+            case 4:
+                for(int innerIteration = 1; innerIteration <= 10; innerIteration++)
+                {
+                    Console.WriteLine($"{iteration} x {innerIteration} = {iteration * innerIteration}");
+                }
+                goto begin;
+            case 5:
+                for(int innerIteration = 1; innerIteration <= 10; innerIteration++)
+                {
+                    Console.WriteLine($"{iteration} x {innerIteration} = {iteration * innerIteration}");
+                }
+                goto begin;
+            case 6:
+                for(int innerIteration = 1; innerIteration <= 10; innerIteration++)
+                {
+                    Console.WriteLine($"{iteration} x {innerIteration} = {iteration * innerIteration}");
+                }
+                goto begin;
+            case 7:
+                for(int innerIteration = 1; innerIteration <= 10; innerIteration++)
+                {
+                    Console.WriteLine($"{iteration} x {innerIteration} = {iteration * innerIteration}");
+                }
+                goto begin;
+            case 8:
+                for(int innerIteration = 1; innerIteration <= 10; innerIteration++)
+                {
+                    Console.WriteLine($"{iteration} x {innerIteration} = {iteration * innerIteration}");
+                }
+                goto begin;
+            case 9:
+                for(int innerIteration = 1; innerIteration <= 10; innerIteration++)
+                {
+                    Console.WriteLine($"{iteration} x {innerIteration} = {iteration * innerIteration}");
+                }
+                goto begin;
+            case 10:
+                for(int innerIteration = 1; innerIteration <= 10; innerIteration++)
+                {
+                    Console.WriteLine($"{iteration} x {innerIteration} = {iteration * innerIteration}");
+                }
+                goto begin;
+            default:
+                System.Console.WriteLine("Kechirasiz, ushbu ko'paytirish jadvali topilmadi...");
+                goto begin;
+        }
     }
 }
+else 
+    System.Console.WriteLine("Kechirasiz, dastur ishlashi uchun 'ha' deagn so'zni kiriting !!!");
