@@ -1,5 +1,13 @@
 ﻿using System;
 
+//loops - aylanma. do while
+string password;
+Console.WriteLine("Parolni kiriting...");
+do
+{
+    password = Console.ReadLine();
+}while(password!="pa$$word");
+
 Console.Write("Birinchi raqamni kiriting => ");
 int birinchiRaqam= Convert.ToInt32(Console.ReadLine());
 Console.WriteLine("Operatsiya turini kiriting => +,-,*,/,%");
@@ -38,12 +46,6 @@ int counter = 1;
         counter++;
     };          
 
-//loops - aylanma. do while
-    string password;
-do
-{
-    password = Console.ReadLine();
-}while(password!="pa$$word");
 
 // //switch care operation
 // switch(operatsiya)
@@ -93,3 +95,29 @@ do
 // Console.WriteLine($"Birinchi raqam ikkinchi raqamdan kichik yoki teng {birinchiRaqam <= ikkinchiRaqam}");
 // Console.WriteLine($"Birinchi raqam ikkinchi raqam teng {birinchiRaqam == ikkinchiRaqam}");
 // Console.WriteLine($"Birinchi raqam ikkinchi raqam teng emas {birinchiRaqam != ikkinchiRaqam}");
+
+//Array
+int[] sonlar = new int[10];
+System.Console.WriteLine("10 ta son kiriting ...");
+sonlar[0] = 2;
+sonlar[1] = 2;
+sonlar[2] = 3;
+sonlar[3] = 4;
+sonlar[4] = 5;
+sonlar[5] = 6;
+sonlar[6] = 7;
+sonlar[7] = 8;
+sonlar[8] = 0;
+sonlar[9] = 19;
+
+//for
+for(int i = 0; i < sonlar.Length; i++)
+{
+    Console.WriteLine(sonlar[i]);
+}
+
+//foreach
+foreach(int son in sonlar)
+{
+    Console.WriteLine(son);
+}
