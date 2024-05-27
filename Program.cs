@@ -2,15 +2,18 @@
 
 Console.Write("Birinchi raqamni kiriting => ");
 int birinchiRaqam= Convert.ToInt32(Console.ReadLine());
-Console.Write("Ikkinchi raqamni kiriting => ");
-int ikkinchiRaqam= Convert.ToInt32(Console.ReadLine());
 Console.WriteLine("Operatsiya turini kiriting => +,-,*,/,%");
 string operatsiya = Console.ReadLine();
+Console.Write("Ikkinchi raqamni kiriting => ");
+int ikkinchiRaqam= Convert.ToInt32(Console.ReadLine());
+
 //ternary operator
 string result =
     birinchiRaqam >= ikkinchiRaqam
         ? "Birinchi son ikkinchisidan katta..."
         : "Birinchi son ikkinchisidan kichik...";
+        Console.WriteLine(result);
+
 //switch expressions
 string natija = operatsiya switch
 {
@@ -23,6 +26,24 @@ string natija = operatsiya switch
 };
 
 Console.WriteLine(natija);
+
+//loops - aylanma. while
+int counter = 1;
+    while(counter < birinchiRaqam)
+    {
+        if(counter % 2 == 0)    
+        {
+            Console.WriteLine(counter);
+        }    
+        counter++;
+    };          
+
+//loops - aylanma. do while
+    string password;
+do
+{
+    password = Console.ReadLine();
+}while(password!="pa$$word");
 
 // //switch care operation
 // switch(operatsiya)
